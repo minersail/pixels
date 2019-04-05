@@ -1,0 +1,11 @@
+<script src="/public/js/loadPic.js"></script>
+<script>
+    $(document).ready(() => {
+        loadPic(document.getElementById("displayCanvas"), $("input").val());
+    });
+</script>
+<div class="picWrapper">
+    <h1>{{ name }} by <a href="/authors/{{ author }}">{{ author }}</a></h1>
+    <canvas id="displayCanvas" width="400" height="400"></canvas>
+</div>
+<input hidden value="{{ pixels }}">

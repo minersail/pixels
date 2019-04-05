@@ -1,0 +1,6 @@
+<div class="color-selector">
+    <div class="bigcolor" style="background-color: {{filterParams.selectedColor}};"></div>
+    {{#each filterParams.colors}}
+        <a href="/color/{{ this }}" style="background-color: {{ this }}"></a>
+    {{/each}}
+</div>
